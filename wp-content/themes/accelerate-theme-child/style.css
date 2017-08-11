@@ -11,6 +11,14 @@
 */
 @import url("../accelerate-theme/style.css");
 
+/*.page-header .primary-navigation .current-menu-item > a{
+   font-weight: bold;
+}*/
+
+.current-menu-item {
+  font-weight: bold;
+}
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
@@ -31,6 +39,12 @@
 .featured-work li {
   list-style: none;
   display: inline-block;
+  margin: 0 0.1em;
+}
+
+.featured-work h3.centered {
+  text-align: center;
+  margin-top: 0.2em;
 }
 
 .blog-post {
@@ -44,6 +58,7 @@
 
 .blog-post h2 {
 	font-size: 1.5em;
+  margin-top: 0.4em;
 }
 
 .read-more-link {

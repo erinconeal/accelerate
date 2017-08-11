@@ -39,3 +39,14 @@ function create_custom_post_types() {
     );
 }
 add_action( 'init', 'create_custom_post_types' );
+
+//Below function is how to highlight header menu item
+//of whatever page you're on
+// function special_nav_class ($classes, $item) {
+//     if (in_array('current-menu-item', $classes) ){
+//         $classes[] = 'highlight-active-page';
+//     }
+//     return $classes;
+// }
+//
+// add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
