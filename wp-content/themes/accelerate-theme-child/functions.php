@@ -40,6 +40,15 @@ function create_custom_post_types() {
 }
 add_action( 'init', 'create_custom_post_types' );
 
+//Add body class
+function accelerate_child_body_classes( $classes ) {
+  if ( is_page( 'contact-us' ) ) {
+    $classes[] = 'contact-page';
+  }
+    return $classes;
+}
+add_filter( 'body_class','accelerate_child_body_classes' );
+
 //Below function is how to highlight header menu item
 //of whatever page you're on
 // function special_nav_class ($classes, $item) {

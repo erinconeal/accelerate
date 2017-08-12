@@ -111,3 +111,26 @@ div.case-study-images img {
   border: 1px solid #dddddd;
   width: 100%;
 }
+
+/* Contact Us */
+
+.contact-page h2 {
+  font-size: 1.5em;
+}
+
+.contact-page p {
+  font-size: 1.2em;
+}
+
+.nf-field-label label {
+  font-weight: 600 !important;
+}
+
+#nf-field-4 {
+  float: right;
+  padding: .1em 6em;
+}
+
+.contact-page #primary {
+  width: 60%;
+}
