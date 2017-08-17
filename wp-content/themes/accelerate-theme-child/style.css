@@ -134,3 +134,62 @@ div.case-study-images img {
 .contact-page #primary {
   width: 60%;
 }
+
+/* About */
+
+h1.center-text {
+  text-align: center;
+  margin: 0 12em;
+}
+
+.white-text {
+  color: white;
+}
+
+.green-text {
+  color: #45ac9d;
+}
+
+.services {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.title-and-content {
+  width: 70%;
+}
+
+.about-us:nth-child(odd) div.title-and-content{
+  float: right;
+}
+
+.about-us:nth-child(odd) div.about-us-img {
+  float: left;
+  margin-left: .8em;
+}
+
+.about-us:nth-child(even) div.title-and-content{
+  float: left;
+}
+
+.about-us:nth-child(even) div.about-us-img {
+  float: right;
+  margin-right: .8em;
+}
+
+.interested {
+  border-top: 1px solid #bfbfbf;
+	padding-top: 1em;
+  text-align: center;
+}
+
+.interested h1 {
+  float: left;
+}
+
+.interested button {
+  float: right;
+}
+
+/* 404 */
