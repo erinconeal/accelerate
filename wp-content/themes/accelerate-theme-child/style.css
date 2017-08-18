@@ -11,17 +11,48 @@
 */
 @import url("../accelerate-theme/style.css");
 
+/* Header */
+
 /*.page-header .primary-navigation .current-menu-item > a{
    font-weight: bold;
 }*/
 
-.primary-navigation li.current-menu-item{
-font-weight: bold;
-}
-
-.current-menu-item {
+.primary-navigation li.current-menu-item {
   font-weight: bold;
 }
+
+/*.current-menu-item {
+  font-weight: bold;
+}*/
+
+/* End Header */
+
+/* Footer */
+
+nav.social-media-navigation .social-btns a {
+	display: inline-block;
+	width: 3.5em;
+	height: 3.5em;
+}
+
+.soc-icon.tw {
+	background: url(img/twitter-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+
+.soc-icon.fb {
+	background: url(img/facebook-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+
+.soc-icon.ln {
+	background: url(img/linkedin-icon.png) no-repeat center 0;
+	background-size: cover;
+}
+
+/* End Footer */
+
+/* Front Page */
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
@@ -202,3 +233,20 @@ h1.center-text {
 }
 
 /* 404 */
+
+.flex-box {
+  display: flex;
+  min-width: 12em;
+  align-items: center;
+}
+
+.map-img {
+  width: 10em;
+  height: 10em;
+  background: url(img/map.png) no-repeat center 0;
+	background-size: cover;
+}
+
+.whoops {
+  margin-left: 1em;
+}
