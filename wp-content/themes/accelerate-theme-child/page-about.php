@@ -21,25 +21,25 @@ get_header(); ?>
   $company_name = get_field('company_name');
   $mission_statement = get_field('mission_statement');
   ?>
-      <div class="home-page">
-        <h1 class="center-text">
-          <span class="green-text"><?php echo $company_name ?></span>
-          <span class="white-text"><?php echo $mission_statement ?></span>
-        </h1>
-      </div>
-      <?php the_content(); ?>
+    <div class="home-page">
+      <h1 class="center-text">
+        <span class="green-text"><?php echo $company_name ?></span>
+        <span class="white-text"><?php echo $mission_statement ?></span>
+      </h1>
+    </div>
+    <?php the_content(); ?>
   <?php endwhile; ?>
 </section>
 
 <div class="services">
   <!-- List of services -->
-  <section class="clearfix">
+  <section>
     <?php query_posts('posts_per_page=5&post_type=our_services'); ?>
   		<?php while ( have_posts() ) : the_post();
       $image = get_field("image");
       $size = "full";
       ?>
-        <div class="about-us">
+        <div class="about-us clearfix">
           <div class="title-and-content">
             <h2 class="title"><?php the_title(); ?></h2>
     				<p><?php the_content(); ?></p>
@@ -50,7 +50,6 @@ get_header(); ?>
             } ?>
           </div>
         </div>
-
   		<?php endwhile; ?>
     <?php wp_reset_query(); ?>
   </section>

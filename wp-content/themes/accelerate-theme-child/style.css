@@ -15,6 +15,10 @@
    font-weight: bold;
 }*/
 
+.primary-navigation li.current-menu-item{
+font-weight: bold;
+}
+
 .current-menu-item {
   font-weight: bold;
 }
@@ -48,7 +52,8 @@
 }
 
 .blog-post {
-	width: 50%;
+	width: 45%;
+  float: left;
 }
 
 .blog-post h4 {
@@ -66,6 +71,10 @@
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+.twitter {
+  float: right;
 }
 
 /* Case Studies */
