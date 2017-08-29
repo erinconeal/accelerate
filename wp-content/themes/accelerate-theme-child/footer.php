@@ -10,7 +10,7 @@
  */
 ?>
 
-		</div><!-- #main -->
+	<div><!-- #main -->
 
 		<footer id="colophon" class="site-footer clearfix" role="contentinfo">
 			<div class="site-info">

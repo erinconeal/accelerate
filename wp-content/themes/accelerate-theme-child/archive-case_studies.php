@@ -15,6 +15,7 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div class="main-content" role="main">
+      <?php query_posts('posts_per_page=5&post_type=case_studies&orderby=date&order=ASC'); ?>
 			<?php while ( have_posts() ) : the_post();
       $services = get_field('services');
       $image_1 = get_field("image_1");
@@ -28,7 +29,7 @@ get_header(); ?>
 
           <?php the_excerpt(); ?>
 
-          <p class="bold"><a href="<?php the_permalink(); ?>">View Project &rsaquo;</a></p>
+          <h6 class="bold green-text"><a href="<?php the_permalink(); ?>">View Project &rsaquo;</a></h6>
         </aside>
 
         <div class="case-study-images">
@@ -41,8 +42,8 @@ get_header(); ?>
       </article>
 
 			<?php endwhile; // end of the loop. ?>
+      <?php wp_reset_query(); ?>
 		</div><!-- #content -->
-
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -29,7 +29,7 @@ get_header(); ?>
 
             <?php the_content(); ?>
 
-            <p class="bold"><a href="<?php echo $link; ?>">Visit Live Site</a></p>
+            <p class="bold green-text"><a href="<?php echo $link; ?>">Visit Live Site &rsaquo;</a></p>
           </aside>
 
           <div class="case-study-images">
@@ -49,5 +49,7 @@ get_header(); ?>
 		</div><!-- #content -->
 
 	</div><!-- #primary -->
-
+	<div class="back-to-work">
+		<a href="<?php echo home_url(); ?>/case-studies"><p><span class="green-text">&#x2190;</span> Back to Work</p></a>
+	</div>
 <?php get_footer(); ?>

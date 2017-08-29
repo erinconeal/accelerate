@@ -19,7 +19,7 @@ get_header(); ?>
 			<div class="homepage-hero">
 				<div class="site-content">
 					<?php the_content(); ?>
-					<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
+					<a class="button" href="<?php echo home_url(); ?>/case-studies">View Our Work</a>
 				</div><!-- .site-content -->
 			</div>
 		<?php endwhile; // end of the loop. ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 	<div class="site-content">
 		<h4>Featured Work</h4>
 		<ul class="homepage-featured-work">
-			<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+			<?php query_posts('posts_per_page=3&post_type=case_studies&orderby=date&order=ASC'); ?>
 				<?php while ( have_posts() ) : the_post();
 				$image_1 = get_field("image_1");
 				$size = "medium";

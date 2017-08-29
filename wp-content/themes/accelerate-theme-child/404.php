@@ -17,10 +17,11 @@ get_header(); ?>
 <div class="services flex-box">
   <div class="map-img"></div>
   <div class="whoops">
-    <h1>Whoops, took a wrong turn...</h1>
-    <p>Sorry, this page no longer exists, never existed or has been moved. We feel like complete jerks for totally misleading you.</p>
-    <br>
-    <p>Feel free to take a look at our <a class="green-text" href="<?php echo home_url(); ?>/blog">blog</a> or some of our featured <a class="green-text" href="<?php echo home_url(); ?>/case-studies">work.</a> </p>
+    <h1 class="green-text">Whoops, took a wrong turn...</h1>
+    <p>Sorry, this page no longer exists, never existed or has been moved. We feel like complete jerks for totally misleading you.
+      <br>
+      <br>
+    Feel free to take a look at our <a class="green-text" href="<?php echo home_url(); ?>/blog">blog</a> or some of our featured <a class="green-text" href="<?php echo home_url(); ?>/case-studies">work.</a> </p>
   </div>
 
 </div>

@@ -25,6 +25,15 @@
  * @since Accelerate Marketing 2.0
  */
 
+add_action( 'after_setup_theme', 'accelerate_theme_child_setup', 11 );
+
+function accelerate_theme_child_setup() {
+  // Post thumbnails support
+  add_theme_support('post-thumbnails');
+
+  add_theme_support( 'post-formats', array( 'quote', 'video' ) );
+}
+
 function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -74,14 +83,3 @@ function accelerate_theme_child_widget_init() {
 
 }
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
-
-//Below function is how to highlight header menu item
-//of whatever page you're on
-// function special_nav_class ($classes, $item) {
-//     if (in_array('current-menu-item', $classes) ){
-//         $classes[] = 'highlight-active-page';
-//     }
-//     return $classes;
-// }
-//
-// add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);

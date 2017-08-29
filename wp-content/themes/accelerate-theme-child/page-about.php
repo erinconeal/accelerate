@@ -21,11 +21,11 @@ get_header(); ?>
   $company_name = get_field('company_name');
   $mission_statement = get_field('mission_statement');
   ?>
-    <div class="home-page">
-      <h1 class="center-text">
+    <div class="about-page">
+      <p class="center-text">
         <span class="green-text"><?php echo $company_name ?></span>
         <span class="white-text"><?php echo $mission_statement ?></span>
-      </h1>
+      </p>
     </div>
     <?php the_content(); ?>
   <?php endwhile; ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 <div class="services">
   <!-- List of services -->
   <section>
-    <?php query_posts('posts_per_page=5&post_type=our_services'); ?>
+    <?php query_posts('posts_per_page=5&post_type=our_services&orderby=date&order=ASC'); ?>
   		<?php while ( have_posts() ) : the_post();
       $image = get_field("image");
       $size = "full";
