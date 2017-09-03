@@ -39,7 +39,7 @@ get_header(); ?>
       $image = get_field("image");
       $size = "full";
       ?>
-        <div class="about-us clearfix">
+        <div class="about-us">
           <div class="title-and-content">
             <h2 class="title"><?php the_title(); ?></h2>
     				<p><?php the_content(); ?></p>
@@ -54,9 +54,9 @@ get_header(); ?>
     <?php wp_reset_query(); ?>
   </section>
 
-  <section class="interested clearfix">
-    <h1>Interested in working with us?</h1>
-    <button class="button"type="button" name="button">Contact Us</button>
+  <section class="interested">
+      <h1>Interested in working with us?</h1>
+      <button class="contact-us-button"type="button" name="button">Contact Us</button>
   </section>
 </div>
 
