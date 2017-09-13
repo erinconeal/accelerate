@@ -56,7 +56,7 @@ get_header(); ?>
 
   <section class="interested">
       <h1>Interested in working with us?</h1>
-      <button class="contact-us-button"type="button" name="button">Contact Us</button>
+     <a class="contact-us-button" type="button" name="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
   </section>
 </div>
 
